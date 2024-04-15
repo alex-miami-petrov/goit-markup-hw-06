@@ -27,10 +27,12 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -195,7 +197,6 @@ ul {
 /* HERO */
 
 .hero {
-  /* background-color: #2e2f42; */
   padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -206,7 +207,13 @@ ul {
   background-size: cover;
   background-position: center;
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url("../images/people-office@2x.jpg");
+  }
 }
 
 .hero-title {
