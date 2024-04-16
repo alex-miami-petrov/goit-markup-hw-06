@@ -667,6 +667,7 @@ footer {
 .footer-subscribe {
   /* display: flex; */
   margin-left: 80px;
+  /* margin-left: auto; */
 }
 .subscribe-title {
   font-weight: 500;
