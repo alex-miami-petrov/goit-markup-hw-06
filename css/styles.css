@@ -220,6 +220,28 @@ ul {
   }
 }
 
+/* @media (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+  }
+
+  .hero {
+    padding: 72px 52px;
+    min-width: 320px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.11;
+    max-width: 216px;
+  }
+} */
+
 .hero-title {
   color: #ffffff;
   font-size: 56px;
@@ -257,21 +279,33 @@ ul {
 
 /* ADVANTAGES */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .advantages {
   padding: 120px 0;
+}
+
+/* @media (min-width: 320px) {
+  .advantages {
+    padding: 96px 16px;
+    min-width: 320px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+
+  .advantages-item {
+    flex-basis: calc((100% - (3 * 72px)) / 4);
+  }
+
+  .advantages-sub-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .advantages-text {
+    font-weight: 500;
+  }
 }
 
 .advantages-list {
@@ -281,7 +315,7 @@ ul {
 
 .advantages-item {
   width: calc((100% - 72px) / 4);
-}
+} */
 
 /* .advantages-icon {
   background-color: #f4f4fd;
