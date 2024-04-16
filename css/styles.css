@@ -306,7 +306,7 @@ ul {
   .advantages-text {
     font-weight: 500;
   }
-}
+} */
 
 .advantages-list {
   display: flex;
@@ -315,7 +315,8 @@ ul {
 
 .advantages-item {
   width: calc((100% - 72px) / 4);
-} */
+}
+*/
 
 /* .advantages-icon {
   background-color: #f4f4fd;
@@ -324,7 +325,7 @@ ul {
   width: 264px;
   height: 112px;
   display: flex;
-} */
+}
 
 .advantages-icon-wprapper {
   background-color: #f4f4fd;
