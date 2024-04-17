@@ -554,7 +554,7 @@ footer {
 .ftr-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   padding-left: 16px;
@@ -883,12 +883,17 @@ footer {
   .footer-container {
     display: flex;
     align-items: baseline;
-    justify-content: none;
+    /* justify-content: flex-start; */
     gap: 72px 24px;
+    /* width: 584px; */
   }
 
   .footer-logo-wrapper {
     text-align: left;
+  }
+
+  .footer-soc {
+    margin: 0;
   }
 
   .footer-soc-subtitle {
@@ -902,6 +907,10 @@ footer {
 
   .subscribe-title {
     text-align: left;
+  }
+
+  .ftr-input {
+    width: 264px;
   }
 }
 
