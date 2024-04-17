@@ -32,7 +32,7 @@ img {
 }
 
 .container {
-  min-width: 320px;
+  width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -210,7 +210,7 @@ ul {
 }
 
 .hero-title {
-  display: flex;
+  /* display: flex; */
   max-width: 216px;
   padding-bottom: 72px;
 }
@@ -896,7 +896,7 @@ footer {
 
 /* TABLET */
 
-@media screen (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -914,7 +914,7 @@ footer {
       ),
       url(../images/Dark-bg-768.jpg);
 
-    min-width: 768px;
+    max-width: 768px;
   }
 
   .hero-title {
@@ -927,7 +927,7 @@ footer {
 
 /* DESKTOP */
 
-@media screen (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
     padding-left: 15px;
