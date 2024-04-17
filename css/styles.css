@@ -6,6 +6,7 @@ body {
   color: #434455;
   background-color: #ffffff;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 h1,
@@ -32,7 +33,7 @@ img {
 }
 
 .container {
-  width: 320px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -55,11 +56,6 @@ ul {
   text-align: center;
   margin: 0 auto;
   /* text-transform: capitalize; */
-}
-
-.text {
-  font-size: 16px;
-  letter-spacing: 0.02em;
 }
 
 .visually-hidden {
@@ -205,7 +201,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -239,65 +235,33 @@ ul {
 /* ADVANTAGES */
 
 .advantages {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .advantages-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
-*/
-
-/* .advantages-icon {
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  display: flex;
-}
-
 .advantages-icon-wprapper {
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  display: flex;
-  gap: 24px;
-  margin-bottom: 8px;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .advantages-sub-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-align: left;
-  margin-bottom: 8px;
+  text-align: center;
+  padding-bottom: 8px;
 }
 
-/* .advantages-sub-title::before {
-  content: "";
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  display: flex;
-} */
-
 .advantages-text {
-  font-size: 16px;
-  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 /* TEAM */
 
@@ -898,7 +862,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 
   .title {
@@ -920,8 +884,18 @@ footer {
   .hero-title {
     max-width: 496px;
     padding-bottom: 36px;
+  }
 
-    /* margin-bottom: 72px; */
+  .advantages-list {
+    gap: 72px 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantages-sub-title {
+    text-align: left;
   }
 }
 
@@ -929,7 +903,7 @@ footer {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -940,12 +914,50 @@ footer {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
-    min-width: 1158px;
+      url(../images/hero-bg.jpg);
+    max-width: 1158px;
   }
 
   .hero-title {
     padding-bottom: 48px;
+  }
+
+  .advantages {
+    padding: 120px 0;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advantages-icon-wprapper {
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages-sub-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .advantages-text {
+    font-weight: 400;
   }
 }
 
