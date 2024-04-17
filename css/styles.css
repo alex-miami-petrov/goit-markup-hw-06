@@ -896,7 +896,7 @@ footer {
 
 /* TABLET */
 
-@media screen (min-width 768px) {
+@media screen (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -927,7 +927,7 @@ footer {
 
 /* DESKTOP */
 
-@media screen (min-width 1158px) {
+@media screen (min-width: 1158px) {
   .container {
     width: 1158px;
     padding-left: 15px;
