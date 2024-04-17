@@ -449,8 +449,9 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 72px;
+  justify-content: center;
 }
 
 /* .footer-wrapper {
@@ -495,6 +496,7 @@ footer {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-soc {
@@ -539,12 +541,11 @@ footer {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .ftr-subs-container {
 }
 .ftr-subs-form {
-  display: flex;
-  gap: 24px;
 }
 .ftr-label {
 }
@@ -557,6 +558,7 @@ footer {
   background-color: transparent;
   padding-left: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
 }
 
 .ftr-input:placeholder-shown {
@@ -585,7 +587,6 @@ footer {
   height: 40px;
   background: #4d5ae5;
   color: #fff;
-  /* text-align: left; */
   border: none;
   font-weight: 500;
   line-height: 1.5;
@@ -885,10 +886,24 @@ footer {
   .footer-container {
     display: flex;
     align-items: baseline;
+    justify-content: none;
     gap: 72px 24px;
   }
 
   .footer-logo-wrapper {
+    text-align: left;
+  }
+
+  .footer-soc-subtitle {
+    text-align: left;
+  }
+
+  .ftr-subs-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .subscribe-title {
     text-align: left;
   }
 }
@@ -909,7 +924,7 @@ footer {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg.jpg);
-    max-width: 1158px;
+    max-width: 1140px;
   }
 
   .hero-title {
