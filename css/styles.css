@@ -28,13 +28,13 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
-  max-width: 1158px;
   min-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -47,15 +47,13 @@ ul {
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: #fff;
   text-align: center;
-  text-transform: capitalize;
-  margin-top: 60px;
-  margin-bottom: 72px;
+  /* text-transform: capitalize; */
 }
 
 .text {
@@ -210,41 +208,9 @@ ul {
   margin: 0 auto;
 }
 
-@media (min-resolution: 192dpi) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people-office@2x.jpg");
-  }
-}
-
-/* @media (min-width: 320px) {
-  .container {
-    min-width: 320px;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 72px;
-  }
-
-  .hero {
-    padding: 72px 52px;
-    min-width: 320px;
-  }
-
-  .hero-title {
-    font-size: 36px;
-    line-height: 1.11;
-    max-width: 216px;
-  }
-} */
-
 .hero-title {
   color: #ffffff;
-  font-size: 56px;
+
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -252,6 +218,7 @@ ul {
   max-width: 496px;
   padding-bottom: 48px;
   margin: 0 auto;
+  /* margin-bottom: 72px; */
 }
 
 /* BUTTON */
@@ -282,31 +249,6 @@ ul {
 .advantages {
   padding: 120px 0;
 }
-
-/* @media (min-width: 320px) {
-  .advantages {
-    padding: 96px 16px;
-    min-width: 320px;
-    margin: 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px;
-  }
-
-  .advantages-item {
-    flex-basis: calc((100% - (3 * 72px)) / 4);
-  }
-
-  .advantages-sub-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-  }
-
-  .advantages-text {
-    font-weight: 500;
-  }
-} */
 
 .advantages-list {
   display: flex;
@@ -745,7 +687,6 @@ footer {
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
-  /* z-index: 999; */
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -780,7 +721,6 @@ footer {
   right: 24px;
   width: 24px;
   height: 24px;
-  /* border: none; */
   padding: 0;
   cursor: pointer;
   border: 1px solid #0000001a;
@@ -811,7 +751,6 @@ footer {
 
 .modal-title {
   font-weight: 500;
-  /* font-size: 16px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
@@ -831,11 +770,8 @@ footer {
   height: 40px;
   background-color: transparent;
   padding-left: 38px;
-  /* padding-left: 62px; */
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-field-icon {
@@ -960,19 +896,41 @@ footer {
   fill: #ffffff;
 }
 
-/* .check-text span {
-  display: flex;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  fill: transparent;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
-} */
-
 .modal-check:checked + .modal-label .span-check {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+/* TABLET */
+
+@media screen (min-width 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .title {
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+/* DESKTOP */
+
+@media screen (min-width 1158px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office@2x.jpg");
+  }
 }
