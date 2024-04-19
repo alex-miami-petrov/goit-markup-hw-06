@@ -197,12 +197,24 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Dark-bg-320.jpg);
+    url(../images/dark-bg-320.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 320px;
   margin: 0 auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192ppi) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-320-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -453,11 +465,6 @@ footer {
   gap: 72px;
   /* justify-content: center; */
 }
-
-/* .footer-wrapper {
-  display: flex;
-  align-items: baseline;
-} */
 
 .footer-logo-wrapper {
   text-align: center;
@@ -840,9 +847,21 @@ footer {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bg-768.jpg);
+      url(../images/dark-bg-768.jpg);
 
     max-width: 768px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192ppi) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg-768-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -933,7 +952,19 @@ footer {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg.jpg);
-    max-width: 1140px;
+    max-width: 1440px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192ppi) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
   }
 
   .hero-title {
