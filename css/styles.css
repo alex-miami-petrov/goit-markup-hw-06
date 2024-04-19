@@ -186,7 +186,6 @@ ul {
   display: flex;
   top: 0;
   flex-direction: column;
-  /* margin-bottom: auto; */
   background-color: #fff;
   padding: 24px 24px 40px 16px;
   overflow: auto;
@@ -252,9 +251,9 @@ ul {
   margin-bottom: 48px;
 }
 
-.m-m-contacts-list:first-child {
+/* .m-m-contacts-list:first-child {
   color: #4d5ae5;
-}
+} */
 
 .m-m-contacts-item {
   font-weight: 500;
@@ -933,6 +932,16 @@ footer {
   .title {
     font-size: 56px;
     line-height: 1.07;
+  }
+
+  .menu-open-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    padding: 24px 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: 0;
   }
 
   .page-nav-list {
