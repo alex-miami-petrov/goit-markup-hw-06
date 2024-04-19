@@ -203,13 +203,17 @@ ul {
   display: flex;
   top: 0;
   flex-direction: column;
-  margin-bottom: auto;
+  /* margin-bottom: auto; */
   background-color: #fff;
   padding: 24px 24px 40px 16px;
   overflow: auto;
   opacity: 0;
   visibility: hidden;
   pointer-events: 0;
+}
+
+.mob-nav {
+  margin-bottom: auto;
 }
 
 .m-m-wrap {
@@ -262,6 +266,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 48px;
 }
 
 .m-m-contacts-list:first-child {
