@@ -201,9 +201,9 @@ ul {
   height: 100%;
   position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   top: 0;
+  flex-direction: column;
+  margin-bottom: auto;
   background-color: #fff;
   padding: 24px 24px 40px 16px;
   overflow: auto;
