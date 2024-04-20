@@ -176,7 +176,7 @@ ul {
   background-color: transparent;
   border: none;
   margin-left: auto;
-  padding: 24px 0;
+  padding: 0;
 }
 
 .mob-menu {
@@ -935,9 +935,7 @@ footer {
   }
 
   .menu-open-btn {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: 0;
+    display: none;
   }
 
   .page-nav-list {
@@ -952,6 +950,12 @@ footer {
     font-style: normal;
     gap: 12px;
     margin-left: auto;
+  }
+
+  .contacts-item {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
 
   .hero {
@@ -1066,6 +1070,12 @@ footer {
   .contacts-list {
     flex-direction: row;
     gap: 40px;
+  }
+
+  .contacts-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .hero {
