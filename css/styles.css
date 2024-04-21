@@ -24,6 +24,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style-type: none;
 }
 
 img {
@@ -41,10 +42,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .title {
@@ -240,20 +237,12 @@ ul {
   color: #2e2f42;
 }
 
-/* .mob-menu-link:first-child {
-  color: #404bbf;
-} */
-
 .m-m-contacts-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-bottom: 48px;
 }
-
-/* .m-m-contacts-list:first-child {
-  color: #4d5ae5;
-} */
 
 .m-m-contacts-item {
   font-weight: 500;
